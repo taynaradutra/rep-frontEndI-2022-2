@@ -1,0 +1,54 @@
+* {
+  color: red;
+}
+
+/* cor de fundo verde para todo o body */
+body {
+  background-color: rgb(0, 255, 68);
+}
+
+/*Estilização aplicada ao H1 da página*/
+h1 {
+  color: fuchsia;
+  background-color: grey;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*Estilização aplicada ao H2 da página*/
+h2 {
+  color: #f1f1f1;
+  font-size: 30px;
+}
+
+/*Estilização aplicada ao H3 da página*/
+h3 {
+  background-color: grey;
+  color: rgba(255, 11, 157, 0.581);
+}
+
+/*seletor de CLASSE - na tag que estiver com essa classe toda a estilização aplicada anteriormente em outro seletor será sobrescrita*/
+.subtitle {
+  color: blueviolet;
+  font-family: "Lucida Sans";
+}
+
+/* classe que está em todas as divs*/
+.classe-div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: yellow;
+}
+
+/*classe específica para a div 1*/
+.div1 {
+  background-color: blue;
+}
+
+/*Estilo criado para a seção das divs que contém o identificador (id) = 'secao-divs '*/
+#secao-divs {
+  background-color: white;
+}
