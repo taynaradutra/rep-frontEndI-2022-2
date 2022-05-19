@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#banner {
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/spider.jpg");
+  background-position: center;
+}
+
+.filmes {
+  width: 350px;
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.filmes__img {
+  width: 350px;
+}
+
+.filmes__img img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.filmes__conteudo {
+}
+
+.filmes__titulo {
+  text-align: center;
+  color: red;
+}
