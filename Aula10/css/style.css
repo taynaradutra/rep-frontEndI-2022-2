@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  width: 500px; /*largura*/
+  height: 200px; /* altura */
+  font-size: 20px;
+  padding: 10px;
+}
+
+.red-box {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.green-box {
+  background-color: green;
+  position: relative;
+  z-index: -1;
+}
+
+.purple-box {
+  background-color: purple;
+}
+
+.orange-box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: orange;
+  top: 10px;
+  left: 150px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+.card {
+  width: 500px;
+  height: 450px;
+  background-color: rgb(210, 210, 210);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__background {
+  background-image: url("../img/background.jpg");
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+
+.card__produto {
+  width: 200px;
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+
+.card__infos {
+  margin: 20px;
+}
+
+.card__titulo {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.card__preco {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card__descricao {
+  text-align: justify;
+}
+
+.card__botao {
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__botao a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
