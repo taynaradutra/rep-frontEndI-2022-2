@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 50px;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: #4a72ca;
+  text-align: center;
+  color: #fff;
+  border: 1px solid black;
+}
+
+.item:nth-child(odd) {
+  /* = ímpar - even = par*/
+  background-color: purple;
+}
