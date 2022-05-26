@@ -36,7 +36,7 @@ main {
   font-weight: bold;
 }
 
-.titulo {
+.title {
   height: 101px;
   background-color: var(--primary-color);
   padding: 5px;
@@ -73,13 +73,13 @@ main {
   position: relative;
 }
 
-.back-batman {
+.background-batman {
   background-image: url("../img/background-batman.png");
   background-repeat: no-repeat;
   background-color: cover;
 }
 
-.back-arlequina {
+.background-arlequina {
   background-image: url("../img/background-arlequina.png");
   background-repeat: no-repeat;
   background-color: cover;
@@ -108,13 +108,13 @@ main {
   margin-top: 65px;
 }
 
-.card__descricao {
+.card__desc {
   margin: 10px 20px;
   text-align: justify;
   flex-grow: 1;
 }
 
-.card__botao {
+.card__button {
   display: flex;
   justify-content: center;
   align-items: center;
