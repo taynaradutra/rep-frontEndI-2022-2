@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --cor-preto: #222222;
+  --cor-vermelho: #fc200c;
+  --cor-verde: #39b24a;
+  --cor-branco: #f3f3f3;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--cor-preto);
+
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+a {
+  /* para todas as tags âncores irei remover a estilização e add cor branca*/
+  text-decoration: none;
+  color: white;
+}
+
+.delivery {
+  background-image: url(../img/delivery.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 490px;
+  height: 350px;
+}
+
+.delivery > h2 {
+  text-align: center;
+}
+
+.delivery span {
+  color: var(--cor-vermelho);
+}
+
+.cardapio {
+  background-color: var(--cor-branco);
+  width: 491px;
+  height: 350px;
+}
+
+.cardapio__titulo {
+  color: var(--cor-vermelho);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cardapio__itens {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin: 50px;
+  line-height: 25px;
+}
+
+.cardapio__top5 > h3 {
+  /*'>' seleciona filhos diretos */
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardapio__img {
+  margin-left: 150px;
+}
+
+.cardapio__img img {
+  display: block;
+  margin: auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: var(--cor-preto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.footer__logo {
+  margin-right: 20px;
+}
