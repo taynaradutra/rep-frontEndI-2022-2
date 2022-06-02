@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #33032f;
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+main {
+  flex-grow: 1;
+
+  background-color: #a0acad;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+}
+
+main p {
+  font-size: 0.8rem;
+}
+
+.container-img {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item-img {
+  width: 30%;
+}
+
+footer {
+  width: 100%;
+  background-color: #33032f;
+  padding: 20px;
+}
+
+/*
+max-width - tudo que estiver abaixo. 
+min-width - tudo que for maior.
+*/
+@media (max-width: 768px) {
+  /*tablet*/
+
+  html {
+    font-size: 16px;
+  }
+
+  main {
+    background-color: red;
+  }
+
+  .item-img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 461px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main {
+    background-color: rgb(34, 0, 255);
+  }
+
+  ul {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-img {
+    width: 90%;
+  }
+}

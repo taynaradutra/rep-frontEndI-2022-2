@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+/*medida relativa que vai usar o elemento pai como referência*/
+.container-em {
+  border: 3px solid coral;
+  margin: 20px;
+  padding: 30px;
+
+  width: 100%;
+  font-size: 20px;
+}
+
+.item-em {
+  margin-top: 20px;
+  border: 3px solid crimson;
+}
+
+.um-em {
+  font-size: 1.5em; /*30px*/
+  width: 50%;
+}
+
+.dois-em {
+  font-size: 2em; /*60px*/
+}
+
+.tres-em {
+  font-size: 2em; /*120px*/
+}
+
+/*medida relativa que vai usar o elemento raiz (html) como referência*/
+.container-rem {
+  border: 3px solid blue;
+  margin: 20px;
+  padding: 30px;
+
+  width: 600px;
+  font-size: 10px;
+}
+
+.item-rem {
+  margin-top: 20px;
+  border: 3px solid green;
+  font-size: 1rem;
+}
+
+.um-rem {
+  width: 100%;
+}
+
+.dois-rem {
+  font-size: 2rem;
+}
