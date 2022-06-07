@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#portal"> Nosso Portal</a></li>
+                <li><a href="#cadastro"> Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="desc-portal">
+        <h1>Nosso portal</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore, vitae dolores, quisquam ea
+            pariatur quam commodi assumenda sit magnam dicta. Aperiam, voluptatum! Reiciendis blanditiis nesciunt saepe
+            vero deleniti delectus?</p>
+
+
+        <span> Para saber mais<a class="portal-link" href="#portal-contato"> clique aqui</a> </span>
+
+
+    </section>
+
+    <section>
+
+        <div class="formulario">
+
+            <h2>Cadastro de Programadores</h2>
+
+            <form action="" method="post">
+
+                <fieldset class="dados-pessoais">
+
+                    <legend> Dados Pessoais</legend>
+
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu email">
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone">
+                    </div>
+
+                    <div>
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento">
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset class="dados-profissionais">
+
+                    <legend>Dados Profissionais</legend>
+
+                    <div class="espDev">
+                        <h4>Qual a sua especialização como desenvolvedor?</h4>
+
+
+                        <div>
+                            <input type="radio" name="espDev" id="espDev-front" value="frontend">
+                            <label for="espDev-front">Frontend </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="espDev" id="espDev-back" value="backend">
+                            <label for="espDev-back"> Backend </label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" name="espDev" id="espDev-full" value="fullstack">
+                            <label for="espDev-full"> Fullstack</label>
+                        </div>
+                    </div>
+
+                    <div class="nivelExp">
+                        <h4> Qual seu nível de experiência</h4>
+                        <select name="nivelExp" id="nivelExp">
+
+                            <optgroup label="Nível de experiência">
+                                <option value="none"> <span> Selecione </span></option>
+                                <option value="estagio"> <span> Estágio </span></option>
+                                <option value="junior">Júnior</option>
+                                <option value="pleno">Pleno</option>
+                                <option value="senior">Senior</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="tipoTrab">
+                        <h4>Tipo de Trabalho</h4>
+
+
+                        <div>
+                            <input type="checkbox" name="tipoTrab" id="tipoTrab-remoto" value="remoto">
+                            <label for="tipoTrab-remoto"> Remoto </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="tipoTrab" id="tipoTrab-presencial" value="presencial">
+                            <label for="tipoTrab-presencial"> Presencial </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="tipoTrab" id="tipoTrab-hibrido" value="hibrido">
+                            <label for="tipoTrab-hibrido">Híbrido</label>
+                        </div>
+
+                    </div>
+
+                    <div class="tecnologias">
+
+                        <h4 for="tecnologias"> Informe as tecnologias que você possui experiência:</h4>
+
+                        <div class="container-inputs">
+
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-html" value="html">
+                                <label for="tec-html">HTML</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-css" value="css">
+                                <label for="tec-css">CSS</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-js" value="js">
+                                <label for="tec-js">JS</label>
+
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-php" value="php">
+                                <label for="tec-php">PHP</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-node" value="node">
+                                <label for="tec-node">Node JS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tecnologias" id="tec-react" value="react">
+                                <label for="tec-react">React JS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="sobre">
+                    <h4 for="sobre">Nos conte um pouco sobre você:</h4>
+                    <textarea name="sobre" id="sobre"
+                        placeholder="Conte um pouco da sua vida, das suas experiências e dos seus hobbies..."></textarea>
+                </div>
+
+
+                <div class="botoes">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>
