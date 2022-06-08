@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  background-color: #8ec5fc;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  list-style: none;
+  font-size: 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: white;
+  content: "teste";
+}
+
+.portal__descricao::before {
+  content: "Antes do texto: ";
+  color: red;
+}
+
+.portal__descricao::first-letter {
+  color: yellow;
+  font-size: 2rem;
+}
+
+.portal__descricao::first-line {
+  background-color: #2b5876;
+}
+
+.portal__descricao::after {
+  content: " >> Pós texto ";
+  color: red;
+}
+
+.portal__descricao::selection {
+  background-color: greenyellow;
+}
+
+.portal-link {
+  text-decoration: none;
+}
+
+.portal-link:link {
+  color: #2b5876;
+}
+
+.portal-link:active {
+  color: yellow;
+}
+
+.desc-portal {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.formulario {
+  /*https://cssgradient.io/*/
+  background-image: linear-gradient(360deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.formulario h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+fieldset {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #e0c3fc;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"],
+[type="date"],
+.sobre textarea {
+  border-radius: 5px;
+  border: 1px solid #e0c3fc;
+  outline: none;
+
+  width: 100%;
+  height: 40px;
+
+  font-size: 0.8rem;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+input[type="email"]:invalid {
+  background-color: rgb(255, 154, 154);
+}
+
+input[type="text"]:focus {
+  background-color: rgb(244, 244, 138);
+}
+
+input[type="text"]:disabled {
+  background-color: rgb(176, 176, 176);
+}
+
+input[type="text"]:disabled::placeholder {
+  color: white;
+}
+
+input[type="text"]::placeholder {
+  color: red;
+}
+
+.sobre textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+input[type="date"] {
+  width: 200px;
+}
+
+select {
+  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+}
+
+.espDev,
+.tipoTrab,
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+}
+
+/*https://cssgradient.io/gradient-backgrounds/*/
+.botoes input {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.botoes input:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 968px) {
+  html {
+    font-size: 10px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
