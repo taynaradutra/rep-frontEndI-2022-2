@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.divEx1 {
+  width: 300px;
+  margin: 120px;
+}
+
+.divEx1 img {
+  border: 1px solid;
+  width: 100%;
+}
+
+.divEx1:hover {
+  transform: scale(1.5) rotate(90deg);
+}
+
+.botao {
+  margin: 50px;
+
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: cubic-bezier(0.21, 0.63, 0.81, 0.48);
+}
+
+.botao:hover {
+  background-color: yellow;
+  color: black;
+  font-size: 1.5rem;
+
+  transform: scale(1.2);
+}
+
+.divEx3 {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aqua;
+
+  animation-name: deslizar;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deslizar {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+    transform: translateY(-600px);
+    background-color: blue;
+  }
+}
+
+.divEx4 {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  border: 20px solid red;
+  border-radius: 50%;
+  border-top-color: transparent;
+}

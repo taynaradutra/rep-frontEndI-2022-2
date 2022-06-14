@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --primary-color: #00669f;
+  --secondary-color: #1cd1b0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main {
+  margin: 10px 0 50px 0;
+}
+
+.bar-desconto {
+  height: 38px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.titulo {
+  height: 101px;
+  background-color: var(--primary-color);
+  padding: 5px;
+  font-size: 2rem;
+  box-shadow: 0px 12px 11px -8px rgba(0, 0, 0, 0.58);
+}
+
+.container-cards {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  height: 597.01px;
+  width: 374px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.81);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card__img-background {
+  width: 100%;
+  height: 217.81px;
+}
+
+.back-batman {
+  background-image: url("../img/background-batman.png");
+}
+
+.back-arlequina {
+  background-image: url("../img/background-arlequina.png");
+}
+
+.card__icone img {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+
+  animation: pulsar 0.5s infinite alternate;
+}
+
+@keyframes pulsar {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.card__img-user img {
+  border-radius: 180px;
+
+  height: 135.43px;
+  width: 135.43px;
+
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  position: absolute;
+  left: 130px;
+  top: 100px;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card__titulo {
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.card__descricao {
+  margin: 30px;
+  text-align: center;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.card__botao {
+  text-decoration: none;
+  text-align: center;
+
+  width: 145.34px;
+  height: 54.76px;
+
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.3rem;
+
+  border: none;
+  border-radius: 10px;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color, transform, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.card__botao:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  color: black;
+}
+
+.icone-mais {
+  background-color: var(--primary-color);
+
+  height: 80px;
+  width: 80px;
+
+  position: fixed;
+  top: 50%;
+  right: 0;
+
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.icone-mais:hover {
+  animation: rotate 1s ease;
+}
+
+.icone-mais span {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  background-color: var(--primary-color);
+
+  height: 51px;
+  width: 100%;
+
+  color: #fff9f9;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .container-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
