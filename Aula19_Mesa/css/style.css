@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #000;
+  --secondary-color: #f2f2f2;
+  --decoration-color: #c79800;
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: "Roboto";
+  color: var(--primary-color);
+  width: 100%;
+}
+
+header {
+  background-color: var(--primary-color);
+  text-align: center;
+  z-index: 100;
+}
+header .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* Menu principal */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 20px;
+}
+nav ul li a {
+  position: relative;
+  margin: 15px;
+  font-size: 25px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/*Uma explicação mais detalhada com exemplo muito similar utilizando before: https://pingback.com/girlcoding/transicao-de-preenchimento-com-css*/
+/*Outra aplicação utilizando o after:https://codepen.io/elb96/pen/aXKXBx*/
+
+nav ul li a::after {
+  content: "";
+  height: 5px; /*crio um 'conteúdo' de altura de 5px */
+  background: var(--decoration-color);
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  transition: ease-in 1s;
+  left: 0;
+  right: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* 
+--- Outra sugestão utilizando animation e keyframes --- 
+
+nav ul li a:hover::before{  
+      animation:sublinhado 1s ease-in;
+      animation-fill-mode: forwards;  
+}
+
+@keyframes sublinhado{
+    from{
+        opacity: 0%;
+        width: 0%;
+    }
+
+    to{
+        opacity: 100%;
+        width: 100%; 
+    }
+}
+
+*/
+
+/* Barra redes sociais*/
+.social {
+  position: fixed;
+  left: 0;
+  top: calc(50% - 90px);
+  z-index: 2000;
+}
+.social ul {
+  list-style: none;
+}
+
+.social ul li a {
+  display: inline-block;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 500ms ease; /* Transição aplicada a todas as propriedades */
+}
+
+.social ul li .icon-facebook {
+  background: #3b5998;
+}
+.social ul li .icon-twitter {
+  background: #00abf0;
+}
+.social ul li .icon-instagram {
+  background: #e4405f;
+}
+.social ul li .icon-whatsapp {
+  background: #25d366;
+}
+.social ul li .icon-mail {
+  background: #666666;
+}
+
+/*Ao passar o mouse sobre o elemento do ícone da rede social */
+.social ul li a:hover {
+  background: var(--primary-color);
+  padding: 10px 30px;
+
+  /* outra opção de fazer a mesma coisa 
+
+   width: 60px;
+   display: flex;
+   justify-content: center;
+
+   */
+}
+
+/* Conteúdo */
+.container {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.container p {
+  margin-top: 10px;
+  text-align: justify;
+}
+.container a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 15px;
+}
+.container a:hover {
+  color: var(--decoration-color);
+  transform: scale(1.03);
+}
+
+/* spinner| */
+.spinner {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.spinner {
+  background-color: transparent;
+  border-top: 10px solid rgb(66, 139, 202);
+  border-right: 10px solid rgb(66, 139, 202);
+  border-bottom: 10px solid rgb(66, 139, 202);
+  border-left: 10px solid rgba(66, 139, 202, 0.2);
+
+  animation-name: carregando;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes carregando {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn); /*turn indica a qtde de voltas */
+  }
+}
