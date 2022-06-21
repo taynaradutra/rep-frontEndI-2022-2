@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: 150px 200px 1fr; (3 colunas)
+    grid-gap: 10px;
+
+    grid-column: inicio / fim;
+    grid-row: inicio / fim;
+
+    ------- ou ------------
+
+     grid-template-areas:
+    "area1 area1 area1 area1 area1"
+    "area2 area2 . area3 area3"
+    "area2 area2 area4 area4 area4";
+
+
+*/
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  grid-template-areas:
+    "elemento1 elemento1 elemento4"
+    "elemento2 elemento3 elemento4";
+}
+
+.el1 {
+  grid-area: elemento1;
+  background-color: coral;
+}
+
+.el2 {
+  grid-area: elemento2;
+  background-color: green;
+}
+
+.el3 {
+  grid-area: elemento3;
+  background-color: aqua;
+}
+
+.el4 {
+  grid-area: elemento4;
+  background-color: orange;
+}
