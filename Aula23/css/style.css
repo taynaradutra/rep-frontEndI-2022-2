@@ -1,0 +1,12 @@
+* {
+  --primary-color: #1d8cb8;
+  --secondary-color: #9d0fac;
+}
+
+.container-nav {
+  background-color: ;
+}
+.container-user {
+  background-color: var(--primary-color);
+  height: 300px;
+}
