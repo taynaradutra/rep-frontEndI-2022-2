@@ -1,0 +1,10 @@
+@use "_variables" as var;
+
+.message-extend {
+  border: 2px solid var.$dark-color;
+  border-radius: var.$border-radius;
+
+  box-shadow: var.$shadow;
+
+  padding: 1rem;
+}

@@ -1,0 +1,27 @@
+@use "_variables" as var;
+@use "_header";
+@use "_section";
+@use "_buttons";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var.$dark-color;
+  color: #000000;
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}

@@ -1,0 +1,129 @@
+header {
+  margin-bottom: 2rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+header nav ul a {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #0074d9;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+header nav ul a:hover {
+  background-color: #ff851b;
+}
+
+.message-extend, section article .message, section article .success, section article .error, section article .warning {
+  border: 2px solid #001f3f;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgb(92, 92, 92);
+  padding: 1rem;
+}
+
+section article {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgb(92, 92, 92);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section article h2 {
+  color: #ff851b;
+}
+section article .success {
+  border-color: green;
+  color: green;
+}
+section article .error {
+  border-color: red;
+  color: red;
+}
+section article .warning {
+  border-color: yellow;
+  color: yellow;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btn__first {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0074d9;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px rgb(92, 92, 92);
+}
+.btn__first:hover {
+  background-color: #ff851b;
+  color: black;
+}
+.btn__second {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f3f;
+  color: white;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px rgb(92, 92, 92);
+}
+.btn__second:hover {
+  background-color: blue;
+  color: yellow;
+}
+.btn__third {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff851b;
+  color: black;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px rgb(92, 92, 92);
+}
+.btn__third:hover {
+  background-color: white;
+  color: green;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #001f3f;
+  color: #000000;
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}/*# sourceMappingURL=style.css.map */

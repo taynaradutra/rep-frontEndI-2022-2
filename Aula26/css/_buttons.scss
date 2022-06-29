@@ -1,0 +1,27 @@
+@use "_variables" as var;
+@use "_mixin.scss" as mixin;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__first {
+    @include mixin.button(
+      var.$primary-color,
+      #fff,
+      var.$secondary-color,
+      black
+    );
+  }
+
+  &__second {
+    @include mixin.button(var.$dark-color, white, blue, yellow);
+  }
+
+  &__third {
+    @include mixin.button(var.$secondary-color, black, white, green);
+  }
+}
+
+
